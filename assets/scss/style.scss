@@ -1,0 +1,144 @@
+@import "variables";
+@import "mixin";
+
+// <uniquifier>: Use a uniquifier for the class name
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+header{
+    margin-left: (124/18*1em);
+    margin-right: (124/18*1em);
+    padding-top: (32/18*1em);
+    .flex-container{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .number{
+        padding-right: (21/18*1em);
+        line-height: (21.78/18*1em);
+        font-weight: 700;
+    }
+}
+
+//Slogan
+.slogan.container{
+    margin-top: (94/18*1em);
+}
+.slogan.flex-container{
+    flex-direction: column;
+    align-items:baseline;
+    h1{
+        font-size: (48/18*1em);
+        font-weight: 700;
+    }
+    p{
+        font-size: (24/18*1em);
+        font-weight: 400;
+        color: #000;
+        padding-top: (24/18*1em);
+    }
+    .buttons{
+        padding-top: (48/18*1em);
+        padding-bottom: (80/18*1em);
+        .btn1{
+            @include Button($buttonClr);
+            margin-right: (32/18*1em);
+
+        }
+        .btn2{
+            @include Button(white);
+            
+        }
+    }
+}
+
+//photo
+
+.photo{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/image/photo.jpg");
+    .phone.flex-container{
+        justify-content: flex-end;
+    }
+    img{
+        padding-top: (335/18*1em);
+        padding-right: (53/18*1em);
+        padding-bottom: (335/18*1em);
+    }
+}
+
+//principles
+
+.opisanie{
+    margin-left: (124/18*1em);
+    margin-right: (124/18*1em);
+    margin-top: (80/18*1em);
+}
+
+.principles.flex-container{
+    flex-direction: column;
+    h2{
+        font-weight: 700;
+        font-size: (36/18*1em);
+    }
+    .threeBut{
+        margin-top: (32/18*1em);
+        button{
+            margin-right: (32/18*1em);
+            @include Button($buttonClr);
+            &:nth-child(#{3}n){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.description{
+    >div{
+        flex-direction: column;
+        margin-top: (56/18*1em);
+        margin-right: (102/18*1em);
+        &:nth-child(#{3}n){
+            margin-right: 0;
+        }
+    }
+    h3{
+        font-weight: 900;
+        margin-bottom: 16/18*1em;
+    }
+    p{
+        width: (306/18*1em);
+        line-height: (27/18*1em);
+    }
+}
+.examplebtn{
+    width: (391/18*1em);
+    margin: (22/18*1em) 0 (63/18*1em);
+}
+.example{
+    color: $buttonClr;
+    border: 0;
+    border-bottom: 1px solid $buttonClr;
+    background-color: white;
+    font-weight: 400;
+    font-size: (24/18*1em);
+}

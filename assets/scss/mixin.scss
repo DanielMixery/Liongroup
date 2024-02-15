@@ -1,0 +1,22 @@
+@mixin Button($buttonClr, $borderr ...) {
+    width: ((274 / 18)*1em);
+    height: ((56 / 18)*1em);
+    @if($buttonClr == #29ABE2){
+        border: 0;
+        background-color: $buttonClr;
+        color:white;
+        &:hover{
+            background-color: darken($color: $buttonClr, $amount: 10);
+            transition:0.3s;
+        }
+    }@else{
+        border:1px solid #29ABE2;
+        color: #29ABE2;
+        background-color: white;
+        &:hover{
+            border: 1px solid darken($color: #29ABE2, $amount: 15);
+            color: darken($color: #29ABE2, $amount: 15);
+            transition:0.3s;
+        }
+    }
+}
