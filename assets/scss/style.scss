@@ -142,3 +142,23 @@ header{
     font-weight: 400;
     font-size: (24/18*1em);
 }
+// block with slider.
+
+
+.primary.flex-container{
+    flex-direction: column;
+    .tekstas.flex-container{
+        flex-direction: column;
+        p{
+            font-weight: 400;
+            line-height: (27/18*1em);
+            color: #999;
+            margin-top: (16/18*1em);
+            margin-bottom: (39.81/18*1em);
+        }
+        h2{
+            font-weight: 700;
+            font-size: (36/18*1em);
+        }
+    }
+}
