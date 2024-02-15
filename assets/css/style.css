@@ -201,3 +201,17 @@ header .number {
   font-weight: 700;
   font-size: 2em;
 }
+
+.slider .slider.flex-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider button {
+  height: 30.8888888889em;
+  border: 0;
+}
+.slider .kvartira {
+  width: 54.8888888889em;
+  height: 30.8888888889em;
+}

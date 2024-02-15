@@ -162,3 +162,17 @@ header{
         }
     }
 }
+
+.slider{
+    .slider.flex-container{
+        justify-content: center;
+    }
+    button{
+        height: (556/18*1em);
+        border: 0;
+    }
+    .kvartira{
+        width: (988/18*1em);
+        height: (556/18*1em);
+    }
+}
