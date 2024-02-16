@@ -257,3 +257,36 @@ header .number {
 .numbers > .flex-container:nth-child(4n) {
   margin-right: 0;
 }
+
+.banks {
+  margin-left: 6.8888888889em;
+}
+
+.banksMain {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4.4444444444em;
+}
+.banksMain h2 {
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 2.4205555556em;
+  color: #191919;
+}
+
+.arguments .text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 27em;
+  margin-right: 7.4444444444em;
+}
+.arguments .text h3 {
+  font-weight: 400;
+  line-height: 2.4205555556em;
+  color: #191919;
+  font-size: 2em;
+}

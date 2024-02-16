@@ -213,3 +213,34 @@ header{
         }
     }
 }
+
+//banks
+.banks{
+    margin-left: (124/18*1em);
+}
+
+.banksMain{
+    flex-direction: column;
+    margin-top: (80/18*1em);
+    h2{
+        font-weight: 700;
+        font-size: (36/18*1em);
+        line-height: 43.57/18*1em;
+        color: #191919;
+    }
+}
+
+.arguments{
+    //margin-top: (32/18*1em);
+    .text{
+        flex-direction: column;
+        width: (486/18*1em);
+        margin-right: (134/18*1em);
+        h3{
+          font-weight: 400;
+          line-height: (43.57/18*1em);
+          color: #191919;
+          font-size: (36/18*1em);  
+        }
+    }
+}
