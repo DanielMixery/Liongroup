@@ -144,10 +144,18 @@ header{
 }
 // block with slider.
 
+.primery{
+    background-color: #F0EEEE;
+    padding-top: (72/18*1em);
+    padding-bottom: (85.97/18*1em);
+}
 
 .primary.flex-container{
+    
     flex-direction: column;
+    
     .tekstas.flex-container{
+        margin-left: (124/18*1em);
         flex-direction: column;
         p{
             font-weight: 400;
@@ -174,5 +182,34 @@ header{
     .kvartira{
         width: (988/18*1em);
         height: (556/18*1em);
+
+    }
+}
+
+.slideropisanie{
+    margin-top: (25.24/18*1em);
+    justify-content: center;
+    .page{
+        width: (39/18*1em);
+        line-height: (27/18*1em);
+        font-weight: 400;
+        margin-right: (63/18*1em);
+    }
+}
+
+.textSlider{
+    line-height: (27/18*1em);
+    max-width:(886/18*1em);
+}
+
+.numbers{
+    justify-content: center;
+    >.flex-container{
+        flex-direction: column;
+        margin-top: (15.6/18*1em);
+        margin-right: (66.65/18*1em);
+        &:nth-child(#{4}n){
+            margin-right: 0;
+        }
     }
 }

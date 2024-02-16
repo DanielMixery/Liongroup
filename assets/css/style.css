@@ -178,6 +178,12 @@ header .number {
   font-size: 1.3333333333em;
 }
 
+.primery {
+  background-color: #F0EEEE;
+  padding-top: 4em;
+  padding-bottom: 4.7761111111em;
+}
+
 .primary.flex-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -185,6 +191,7 @@ header .number {
           flex-direction: column;
 }
 .primary.flex-container .tekstas.flex-container {
+  margin-left: 6.8888888889em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -214,4 +221,39 @@ header .number {
 .slider .kvartira {
   width: 54.8888888889em;
   height: 30.8888888889em;
+}
+
+.slideropisanie {
+  margin-top: 1.4022222222em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slideropisanie .page {
+  width: 2.1666666667em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-right: 3.5em;
+}
+
+.textSlider {
+  line-height: 1.5em;
+  max-width: 49.2222222222em;
+}
+
+.numbers {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.numbers > .flex-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.8666666667em;
+  margin-right: 3.7027777778em;
+}
+.numbers > .flex-container:nth-child(4n) {
+  margin-right: 0;
 }
