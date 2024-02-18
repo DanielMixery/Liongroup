@@ -217,6 +217,16 @@ header{
 //banks
 .banks{
     margin-left: (124/18*1em);
+    .textLink{
+        margin-top: (13/18*1em);
+        margin-bottom: (80/18*1em);
+    }
+    .textLink a{
+        text-decoration: none;
+        font-size: (24/18*1em);
+        color: $buttonClr;
+        border-bottom: 1px solid $buttonClr;
+    }
 }
 
 .banksMain{
@@ -244,3 +254,4 @@ header{
         }
     }
 }
+
