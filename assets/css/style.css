@@ -300,3 +300,51 @@ header .number {
   color: #191919;
   font-size: 2em;
 }
+
+.grid-container {
+  margin: 0 6.8888888889em;
+}
+.grid-container .text.flex-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.grid-container .text.flex-container .text2 {
+  color: #999;
+  line-height: 1.5em;
+}
+.grid-container .grid__.flex-container {
+  width: 28.3333333333em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.grid-container .grid__.flex-container img {
+  width: 100%;
+  height: auto;
+}
+.grid-container .grid__.flex-container .price.flex-container {
+  padding-top: 1.3188888889em;
+  padding-bottom: 1.1111111111em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid-container .grid__.flex-container .price.flex-container p {
+  font-size: 1.3333333333em;
+  color: #191919;
+  font-weight: 400;
+}
+
+.container__.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5.6666666667em 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5.6666666667em;
+     -moz-column-gap: 5.6666666667em;
+          column-gap: 5.6666666667em;
+  row-gap: 3.8738888889em;
+}

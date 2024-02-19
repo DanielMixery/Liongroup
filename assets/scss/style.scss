@@ -255,3 +255,42 @@ header{
     }
 }
 
+//grid
+
+.grid-container{
+    margin: 0 (124/18*1em);
+    .text.flex-container{
+        flex-direction: column;
+        .text2{
+            color: #999;
+            line-height: (27/18*1em);
+        }
+    }
+    .grid__.flex-container{
+        width: (510/18*1em);
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .price.flex-container{
+            padding-top: (23.74/18*1em);
+            padding-bottom: (20/18*1em);
+            justify-content: space-between;
+            p{
+                font-size: (24/18*1em);
+                color: #191919;
+                font-weight: 400;
+            }
+
+        }
+    }
+}
+
+.container__.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: (102/18*1em);
+    row-gap: (69.73/18*1em);
+
+}
