@@ -303,6 +303,7 @@ header .number {
 
 .grid-container {
   margin: 0 6.8888888889em;
+  padding-bottom: 4.2177777778em;
 }
 .grid-container .text.flex-container {
   -webkit-box-orient: vertical;
@@ -315,7 +316,6 @@ header .number {
   line-height: 1.5em;
 }
 .grid-container .grid__.flex-container {
-  width: 28.3333333333em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -347,4 +347,24 @@ header .number {
      -moz-column-gap: 5.6666666667em;
           column-gap: 5.6666666667em;
   row-gap: 3.8738888889em;
+}
+.container__.grid .linkText {
+  text-decoration: none;
+  margin-top: 1.1111111111em;
+  width: 11.1111111111em;
+  color: #29ABE2;
+  border-bottom: 1px solid #29ABE2;
+}
+
+.container.q {
+  padding: 4.3333333333em 0;
+  padding-left: 6.8888888889em;
+  background-color: #F0EEEE;
+}
+.container.q .container__.qoute > a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2em;
+  color: #29ABE2;
+  border-bottom: 1px solid #29ABE2;
 }

@@ -259,6 +259,7 @@ header{
 
 .grid-container{
     margin: 0 (124/18*1em);
+    padding-bottom: (75.92/18*1em);
     .text.flex-container{
         flex-direction: column;
         .text2{
@@ -267,7 +268,7 @@ header{
         }
     }
     .grid__.flex-container{
-        width: (510/18*1em);
+        
         flex-direction: column;
         img{
             width: 100%;
@@ -292,5 +293,27 @@ header{
     grid-template-columns: 1fr 1fr;
     column-gap: (102/18*1em);
     row-gap: (69.73/18*1em);
+    .linkText{
+        text-decoration: none;
+        margin-top: (20/18*1em);
+        width: (200/18*1em);
+        color: $buttonClr;
+        border-bottom: 1px solid $buttonClr;
+    }
+}
 
+//why
+
+.container.q{
+    padding: (78/18*1em) 0;
+    padding-left: (124/18*1em);
+    background-color: #F0EEEE;
+    .container__.qoute>a{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: (36/18*1em);
+        color: $buttonClr;
+        border-bottom: 1px solid $buttonClr;
+
+    }
 }
