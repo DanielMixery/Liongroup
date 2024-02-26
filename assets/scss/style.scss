@@ -317,3 +317,47 @@ header{
 
     }
 }
+
+//video
+
+.container.clients{
+    padding-left: (124/18*1em);
+    padding-top: (80/18*1em);
+    padding-bottom: (80/18*1em);
+    .clients.flex-container{
+        flex-direction: column;
+        .title{
+            margin-bottom: (16/18*1em);
+            font-weight: 700;
+            font-size: (36/18*1em);
+            color:#191919;
+        }
+        .textTitle{
+            color: #999;
+            font-weight: 400;
+            font-size: 1em;
+            margin-bottom: (47.81/18*1em);
+        }
+        .video.flex-container{
+            img{
+                margin-right: (32/18*1em);
+                &:nth-child(#{2}n){
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .container__.qoute{
+            margin-top: (54/18*1em);
+        }
+        .container__.qoute>a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: (24/18*1em);
+            color: $buttonClr;
+            border-bottom: 1px solid $buttonClr;
+    
+        }
+    }
+
+}
