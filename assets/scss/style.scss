@@ -339,7 +339,9 @@ header{
             margin-bottom: (47.81/18*1em);
         }
         .video.flex-container{
+            justify-content: center;
             img{
+
                 margin-right: (32/18*1em);
                 &:nth-child(#{2}n){
                     margin-right: 0;
@@ -360,4 +362,34 @@ header{
         }
     }
 
+}
+
+//footer
+.footer{
+    background-color: #191919;
+}
+.footer-container{
+    padding-top: (83/18*1em);
+    padding-left: (124/18*1em);
+    .footer.flex-container{
+        flex-direction: column;
+        p.workhours{
+            font-weight: 400;
+            font-size: 1em;
+            color: #fff;
+            margin-bottom: (16.22/18*1em);
+        }
+        p.number{
+            font-weight: 700;
+            font-size: 2em;
+            color: #fff;
+            
+        }
+        p.email{
+            margin-top: 2.2222rem;
+            margin-bottom: (106/18*1rem);
+            font-size: (24/18*1em);
+            color: $buttonClr;
+        }
+    }
 }
