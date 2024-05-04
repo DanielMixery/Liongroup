@@ -33,8 +33,16 @@ header{
         padding-right: (21/18*1em);
         line-height: (21.78/18*1em);
         font-weight: 700;
+        #callus{
+    @include Button($buttonClr, 1px );
+        }
     }
+        #callus{
+    @include Button($buttonClr, 1px );
+        }
 }
+
+
 
 //Slogan
 .slogan.container{
@@ -343,7 +351,7 @@ header{
             img{
 
                 margin-right: (32/18*1em);
-                &:nth-child(#{2}n){
+                img:last-child{
                     margin-right: 0;
                 }
             }
@@ -391,5 +399,42 @@ header{
             font-size: (24/18*1em);
             color: $buttonClr;
         }
+    }
+}
+
+// Adaptive below <3
+
+
+@media screen and (max-width:1199px){
+    .description.flex-container{
+        flex-direction: column;
+    }
+        .video.flex-container{
+            flex-direction: column;
+            img{
+
+                margin-right: (32/18*1em);
+                &:last-child{
+                    margin-right: (32/18*1em);
+                    padding-top: (47.81/18*1em);
+                }
+            }
+        }
+}
+
+@media screen and (max-width:991px) {
+    header{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .menu.flex-container{
+        justify-content: center;
+    }
+    .rightside.flex-container{
+        display: none;
+    }
+    .opisanie{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

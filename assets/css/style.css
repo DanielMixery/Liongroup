@@ -35,6 +35,30 @@ header .number {
   line-height: 1.21em;
   font-weight: 700;
 }
+header .number #callus {
+  width: 15.2222222222em;
+  height: 3.1111111111em;
+  border: 0;
+  background-color: #29ABE2;
+  color: white;
+}
+header .number #callus:hover {
+  background-color: #1a8dbe;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header #callus {
+  width: 15.2222222222em;
+  height: 3.1111111111em;
+  border: 0;
+  background-color: #29ABE2;
+  color: white;
+}
+header #callus:hover {
+  background-color: #1a8dbe;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 .slogan.container {
   margin-top: 5.2222222222em;
@@ -400,7 +424,7 @@ header .number {
 .container.clients .clients.flex-container .video.flex-container img {
   margin-right: 1.7777777778em;
 }
-.container.clients .clients.flex-container .video.flex-container img:nth-child(2n) {
+.container.clients .clients.flex-container .video.flex-container img img:last-child {
   margin-right: 0;
 }
 .container.clients .clients.flex-container .container__.qoute {
@@ -444,4 +468,44 @@ header .number {
   margin-bottom: 5.8888888889rem;
   font-size: 1.3333333333em;
   color: #29ABE2;
+}
+
+@media screen and (max-width: 1199px) {
+  .description.flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video.flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video.flex-container img {
+    margin-right: 1.7777777778em;
+  }
+  .video.flex-container img:last-child {
+    margin-right: 1.7777777778em;
+    padding-top: 2.6561111111em;
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu.flex-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rightside.flex-container {
+    display: none;
+  }
+  .opisanie {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
